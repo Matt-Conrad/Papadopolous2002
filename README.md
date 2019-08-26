@@ -8,7 +8,11 @@ This code currently only implements sections up to and including 2.3, so the fol
 
 While I will not include the paper, for each command in the script I've added the relevant sentences in the comments above each command. 
 
-### Python Modules required
+## Dataset
+
+In the paper, the authors use the MIAS dataset whose website is here: http://peipa.essex.ac.uk/info/mias.html. This paper is only interested in detecting the 
+
+## Python Modules required
 
 - numpy (1.16.4)
 - matplotlib.pyplot (3.1.0)
