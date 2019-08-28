@@ -164,7 +164,7 @@ def boundingBox(image):
     cv2.rectangle(blank,(x,y),(x+w,y+h),1,2)
     return blank, x, y, w, h 
 
-dataDirectory = './PapaPaper/calc-mias'
+dataDirectory = './calc-mias'
 roiCount = 0
 filesList = os.listdir(dataDirectory)
 random.shuffle(filesList)
