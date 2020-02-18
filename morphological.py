@@ -1,7 +1,7 @@
 import numpy as np
 from scipy.ndimage.measurements import label
 import cv2
-import displayImages as dI
+import visualization.display_images as dI
 
 def getBiggestComp(image):
     """ Uses connected components to get the breast """

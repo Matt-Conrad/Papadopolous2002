@@ -1,6 +1,6 @@
 import pgmReader as pgm
 import os
-import displayImages as dI
+import visualization.display_images as dI
 import morphological as morph
 import numpy as np
 import cv2
