@@ -1,6 +1,7 @@
 import pgmReader as pgm
 import os
 import visualization.display_images as dI
+from SharedImageProcessing.connectedComponents import getBiggestComp
 import morphological as morph
 import numpy as np
 import cv2
@@ -24,7 +25,7 @@ def preprocessImage(image):
     """ Neighbouring white pixels with connectivity of eight are grouped together to form objects corresponding
         either to the breast region or to marks and film artifacts. The largest object corresponds to
         the breast region """
-    bigComp = morph.getBiggestComp(binImage).astype(np.uint8) 
+    bigComp = getBiggestComp(binImage).astype(np.uint8) 
     dI.display2dImages([binImage,bigComp],title='Biggest Component')
 
     """ Apply morphological dilation with a structure element radius of 30 pixels (1.5 mm) """

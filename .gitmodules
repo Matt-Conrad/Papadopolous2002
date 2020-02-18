@@ -1,3 +1,6 @@
 [submodule "visualization"]
 	path = visualization
 	url = https://github.com/Matt-Conrad/visualization.git
+[submodule "SharedImageProcessing"]
+	path = SharedImageProcessing
+	url = https://github.com/Matt-Conrad/SharedImageProcessing.git
